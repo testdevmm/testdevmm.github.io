@@ -668,12 +668,8 @@
 						</p>
 						<p class="section--text">
 						<script>
-						function openDialer(){
-						
-						var hash = encodeURI("#");
-						var link = "tel:*800" + hash;
-						
-						window.open(link);
+						function openDialer(){																		
+							window.open(encodeURI("tel:*800#"));
 						}
 						</script>
 						<a href="javascript:void(0)" onclick="openDialer();">Get Loan</a>
