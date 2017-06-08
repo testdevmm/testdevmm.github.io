@@ -692,7 +692,7 @@
 							
 <script>
 						function openDialer(){	
-							var link = encodeURI("tel://*800") + encodeURI("\#");
+							var link = "tel://*800" + encodeURIComponent("%23");
 							//window.open(link.replace("##", "#"));
 							window.open(link);
 						}
