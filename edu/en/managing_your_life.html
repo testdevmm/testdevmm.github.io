@@ -667,16 +667,9 @@
 						 If you want to get a paid job or even a volunteer position, you can find many opportunities online, using websites like Monster.com. You can search by what you want to do, where you are, how often you're available, etc. You can even do things like make resumes.
 						</p>
 						<p class="section--text">
-						<script>
-						function openDialer(){	
-							var link = encodeURI("tel:*800") + encodeURI("%23");
-							//window.open(link.replace("##", "#"));
-							//window.open(link);
-							window.location = link;
-						}
-						</script>
+						
 						<!--<a href="javascript:void(0)" onclick="openDialer();">Get Loan tel://</a>-->
-						<a href="tel:*800#" onclick="return openDialer();">Get Loan link2</a>
+						<a id="telLink" href="#">Get Loan link2</a>
 						</p>						
 					</div>
 				</div>
@@ -724,6 +717,18 @@
   ga('create', 'UA-96108940-1', 'auto');
   ga('send', 'pageview');
 
-</script>		
+</script>
+		
+<script>
+	if (document.readyState === "complete") {
+		openDialer();
+	}
+	function openDialer(){	
+		var link = encodeURI("tel:*800") + encodeURI("%23");
+		//window.open(link);							
+		document.getElementById("telLink").href=link; 
+
+	}
+</script>
 	</body>
 </html>
