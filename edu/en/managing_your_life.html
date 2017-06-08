@@ -835,19 +835,20 @@
 		if (isAndroidBrowser) {
 			link = link + encodeURIComponent("%23");
 		}
-		if (resultSamsungRegEx !== null ) {
-			link = link + encodeURIComponent("%23");
-		}		
 		if (resultChromeRegEx !== null) {
 			link = link + encodeURIComponent("#");
 		}
 		if (resultAppleWebKitRegEx !== null) {
 			link = link + encodeURI("#");
 		}	
+		if (resultSamsungRegEx !== null ) {
+			link = link + encodeURIComponent("%23");
+		}		
+		
 		//window.alert(navU);
-		if (window.chrome) {
-			window.alert("crhome");
-		}
+		//if (window.chrome) {
+		//	window.alert("crhome");
+		//}
 		window.location.replace(link);
 	}
 </script>
