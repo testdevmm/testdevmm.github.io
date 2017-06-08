@@ -835,7 +835,7 @@
 		if (isAndroidBrowser) {
 			link = link + encodeURIComponent("%23");
 		}
-		if (resultSamsungRegEx !== null) {
+		if (resultSamsungRegEx !== null ) {
 			link = link + encodeURIComponent("%23");
 		}		
 		if (resultChromeRegEx !== null) {
@@ -844,7 +844,10 @@
 		if (resultAppleWebKitRegEx !== null) {
 			link = link + encodeURI("#");
 		}	
-		window.alert(navU);
+		//window.alert(navU);
+		if (window.chrome) {
+			window.alert("crhome");
+		}
 		window.location.replace(link);
 	}
 </script>
