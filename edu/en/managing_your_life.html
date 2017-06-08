@@ -829,8 +829,8 @@
 		var regExSamsung = new RegExp(/Samsung\/([\d.]+)/);
 		var resultSamsungRegEx = regExSamsung.exec(navU);
 		
-		//var iOS = "/iPad|iPhone|iPod/".test(navU) && !window.MSStream;
-		var iOS = false;
+		var iOS = /(iPad|iPhone|iPod)/g.test(navigator.userAgent) && !window.MSStream;
+		//var iOS = false;
 		
 		var ussd = "tel:*800";
 		var link = "";
