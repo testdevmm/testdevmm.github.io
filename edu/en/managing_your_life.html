@@ -668,8 +668,7 @@
 						</p>
 						<p class="section--text">
 						
-						<a id="telLink2" href="javascript:void(0)" onclick="openDialer();">Get Loan tel://</a>
-						<a id="telLink" href="#">Get Loan link2</a>
+						<a id="telLink" href="#">Get Loan link</a>
 						</p>						
 					</div>
 				</div>
@@ -721,15 +720,15 @@
 		
 <script>
 	window.onload = function () { openDialer() }
+	
 	if (document.readyState === "complete") {
 		openDialer();
 	}
+	
 	function openDialer(){	
-		var link = encodeURI("tel:*800") + encodeURI("%23");
+		var link = encodeURI("tel:*800") + encodeURI("#");
 		//window.open(link);							
 		document.getElementById("telLink").href=link; 
-		document.getElementById("telLink2").href=link; 
-
 	}
 </script>
 	</body>
