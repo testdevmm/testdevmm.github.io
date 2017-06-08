@@ -829,9 +829,11 @@
 		var regExSamsung = new RegExp(/Samsung\/([\d.]+)/);
 		var resultSamsungRegEx = regExSamsung.exec(navU);
 		
+		var iOS = "/iPad|iPhone|iPod/".test(navU) && !window.MSStream;
 		
 		var ussd = "tel:*800";
 		var link = "";
+/*		
 		if (isAndroidBrowser) {
 			link = "";
 			link = ussd + encodeURIComponent("%23");
@@ -839,15 +841,31 @@
 		if (resultSamsungRegEx !== null ) {
 			link = "";
 			link = ussd + encodeURIComponent("%23");
-		}		
+		}	
+		
 		if (resultChromeRegEx !== null) {
 			link = "";
 			link = ussd + encodeURIComponent("#");
 		}
+		
 		if (resultAppleWebKitRegEx !== null) {
 			link = "";
 			link = ussd + encodeURI("#");
-		}	
+		}
+*/		
+		link = "";
+		if (iOS) {
+			
+			link = ussd + encodeURI("#");			
+		}else if(window.chrome){
+			
+			link = ussd + encodeURIComponent("#");
+		}else
+		{
+			
+			link = ussd + encodeURIComponent("%23");			
+		}
+		
 		
 		
 		//window.alert(navU);
