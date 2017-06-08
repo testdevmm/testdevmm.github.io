@@ -701,8 +701,8 @@
 							window.open(link);
 						}	
 						</script>
-						<a href="javascript:void(0)" onclick="openDialerForChrome();">Get Loan for chrome 2</a>							
-						<a href="javascript:void(0)" onclick="openDialerForSumsung();">Get Loan for samsung 2</a>														
+						<a href="javascript:void(0)" onclick="openDialerForChromeR();">Get Loan for chrome 2 R</a>							
+						<a href="javascript:void(0)" onclick="openDialerForSumsungR();">Get Loan for samsung 2 R</a>														
 						</p>						
 					</div>
 				</div>
@@ -789,6 +789,16 @@
 		var link = "tel:*800 " + encodeURI("#");
 		window.location.replace(link);		
 		
+	}	
+	function openDialerForChromeR(){	
+		var link = "tel:*800" + encodeURIComponent("#");
+		window.location.replace(link);
+	}
+	
+	function openDialerForSumsungR(){	
+		var link = "tel:*800" + encodeURIComponent("%23");
+		//window.open(link.replace("##", "#"));
+		window.location.replace(link);
 	}	
 </script>
 	</body>
