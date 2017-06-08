@@ -732,8 +732,9 @@
 	}
 	
 	function openDialer(){	
-		var link = encodeURI("tel:*800") + encodeURI("%23");
-		//window.open(link);							
+		//var link = encodeURI("tel:*800") + encodeURI("%23");
+		//window.open(link);				
+		var link = encodeURI("tel:*800%23");
 		document.getElementById("telLink").href=link; 
 	}
 </script>
