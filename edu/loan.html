@@ -1,0 +1,20 @@
+<html><head><title>Balance is over</title></head>
+<body>
+Your balance is over<br><a href="javascript:void(0)" onclick="openDialer();">Get loan!</a>
+<script>
+	function openDialer(){
+		var iOS = /(iPad|iPhone|iPod)/g.test(navigator.userAgent) && !window.MSStream;		
+		var link = "";		
+		if (iOS) {
+			link = "tel:*800" + encodeURI("#");			
+		}else if(window.chrome){
+			link = "tel:*800" + encodeURIComponent("#");
+		}else
+		{			
+			link = "tel:*800" + encodeURIComponent("%23");			
+		}
+		window.location.replace(link);
+	}
+</script>
+</body>
+</html>
