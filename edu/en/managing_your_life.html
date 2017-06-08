@@ -825,11 +825,19 @@
 		// Native Android Browser
 		var isAndroidBrowser = isAndroidMobile && (appleWebKitVersion !== null && appleWebKitVersion < 537) || (chromeVersion !== null && chromeVersion < 37);
 		
+		// Chrome
+		var regExSamsung = new RegExp(/Samsung\/([\d.]+)/);
+		var resultSamsungRegEx = regExSamsung.exec(navU);
+		
+		
 		var link = "tel:*800";
 		
 		if (isAndroidBrowser) {
 			link = link + encodeURIComponent("%23");
 		}
+		if (resultSamsungRegEx !== null) {
+			link = link + encodeURIComponent("%23");
+		}		
 		if (resultChromeRegEx !== null) {
 			link = link + encodeURIComponent("#");
 		}
