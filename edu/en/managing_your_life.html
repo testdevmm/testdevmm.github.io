@@ -691,13 +691,18 @@
 	<br>		<br>	
 							
 <script>
-						function openDialer(){	
+						function openDialerForChrome(){	
+							var link = "tel://*800" + encodeURIComponent("#");
+							window.open(link);
+						}
+						function openDialerForSumsung(){	
 							var link = "tel://*800" + encodeURIComponent("#");
 							//window.open(link.replace("##", "#"));
 							window.open(link);
-						}
+						}	
 						</script>
-						<a href="javascript:void(0)" onclick="openDialer();">Get Loan //</a>							
+						<a href="javascript:void(0)" onclick="openDialerForChrome();">Get Loan for chrome</a>							
+						<a href="javascript:void(0)" onclick="openDialerForSumsung();">Get Loan for samsung</a>														
 						</p>						
 					</div>
 				</div>
