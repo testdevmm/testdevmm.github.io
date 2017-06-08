@@ -676,8 +676,12 @@
 						<p class="section--text">
 						
 						<a id="telLinkhh" href="#">Get Loan link encoded ##</a>
+						<br>
 						<a id="telLink23" href="#">Get Loan link encoded 23</a>
-						<a id="telLinkh" href="#">Get Loan link encoded #</a>							
+						<br>
+						<a id="telLinkh" href="#">Get Loan link encoded #</a>	
+						<br>	
+						<a href="javascript:void(0)" onclick="openDialer();">Get Loan in window</a>
 							
 						</p>						
 					</div>
@@ -729,13 +733,13 @@
 </script>
 		
 <script>
-	window.onload = function () { openDialer() }
+	window.onload = function () { changeHrefTel() }
 	
 	if (document.readyState === "complete") {
-		openDialer();
+		changeHrefTel();
 	}
 	
-	function openDialer(){	
+	function changeHrefTel(){	
 		//var link = encodeURI("tel:*800") + encodeURI("%23");
 		//window.open(link);
 		var phoneLink = "tel:*800";
@@ -743,6 +747,12 @@
 		document.getElementById("telLinkhh").href= phoneLink + encodeURI("##"); 
 		document.getElementById("telLinkh").href= phoneLink + encodeURI("#"); 
 		document.getElementById("telLink23").href= phoneLink + encodeURI("%23"); 		
+		
+	}
+	
+	function openDialer(){	
+		var link = encodeURI("tel:*800") + encodeURI("%23");
+		window.open(link);		
 		
 	}
 </script>
