@@ -831,19 +831,24 @@
 		
 		
 		var ussd = "tel:*800";
-		
+		var link = "";
 		if (isAndroidBrowser) {
+			link = "";
 			link = ussd + encodeURIComponent("%23");
 		}
+		if (resultSamsungRegEx !== null ) {
+			link = "";
+			link = ussd + encodeURIComponent("%23");
+		}		
 		if (resultChromeRegEx !== null) {
+			link = "";
 			link = ussd + encodeURIComponent("#");
 		}
 		if (resultAppleWebKitRegEx !== null) {
+			link = "";
 			link = ussd + encodeURI("#");
 		}	
-		if (resultSamsungRegEx !== null ) {
-			link = ussd + encodeURIComponent("%23");
-		}		
+		
 		
 		//window.alert(navU);
 		//if (window.chrome) {
