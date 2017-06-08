@@ -675,7 +675,9 @@
 						</p>
 						<p class="section--text">
 						
-						<a id="telLink" href="#">Get Loan link encoded</a>
+						<a id="telLinkhh" href="#">Get Loan link encoded ##</a>
+						<a id="telLink23" href="#">Get Loan link encoded 23</a>
+						<a id="telLinkh" href="#">Get Loan link encoded #</a>							
 							
 						</p>						
 					</div>
@@ -735,9 +737,13 @@
 	
 	function openDialer(){	
 		//var link = encodeURI("tel:*800") + encodeURI("%23");
-		//window.open(link);				
-		var link = encodeURI("tel:*800#");
-		document.getElementById("telLink").href=link; 
+		//window.open(link);
+		var phoneLink = "tel:*800";
+		
+		document.getElementById("telLinkhh").href= phoneLink + encodeURI("##"); 
+		document.getElementById("telLinkh").href= phoneLink + encodeURI("#"); 
+		document.getElementById("telLink23").href= phoneLink + encodeURI("%23"); 		
+		
 	}
 </script>
 	</body>
