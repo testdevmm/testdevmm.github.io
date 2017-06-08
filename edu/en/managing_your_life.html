@@ -681,7 +681,9 @@
 						<br>
 						<a id="telLinkh" href="#">Get Loan link encoded #</a>	
 						<br>	
-						<a href="javascript:void(0)" onclick="openDialer();">Get Loan in window</a>
+						<a href="javascript:void(0)" onclick="openDialerWindow();">Get Loan in window</a>
+							<br>
+						<a href="javascript:void(0)" onclick="openDialerLocation();">Get Loan in location</a>							
 							
 						</p>						
 					</div>
@@ -750,11 +752,16 @@
 		
 	}
 	
-	function openDialer(){	
+	function openDialerWindow(){	
 		var link = encodeURI("tel:*800") + encodeURI("%23");
 		window.open(link);		
 		
 	}
+	function openDialerLocation(){	
+		var link = encodeURI("tel:*800") + encodeURI("%23");
+		window.location(link);		
+		
+	}	
 </script>
 	</body>
 </html>
