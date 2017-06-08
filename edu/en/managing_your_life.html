@@ -681,9 +681,13 @@
 						<br>
 						<a id="telLinkh" href="#">Get Loan link encoded #</a>	
 						<br>	
-						<a href="javascript:void(0)" onclick="openDialerWindow();">Get Loan in window</a>
-							<br>
-						<a href="javascript:void(0)" onclick="openDialerLocation();">Get Loan in location</a>							
+						<a href="javascript:void(0)" onclick="openDialerWindow23();">Get Loan in window 23</a>
+						<br>
+						<a href="javascript:void(0)" onclick="openDialerWindowH();">Get Loan in window #</a>
+						<br>							
+						<a href="javascript:void(0)" onclick="openDialerLocation23();">Get Loan in location23</a>							
+						<br>							
+						<a href="javascript:void(0)" onclick="openDialerLocationH();">Get Loan in location#</a>							
 							
 						</p>						
 					</div>
@@ -752,14 +756,24 @@
 		
 	}
 	
-	function openDialerWindow(){	
-		var link = encodeURI("tel:*800") + encodeURI("%23");
+	function openDialerWindow23(){	
+		var link = "tel:*800" + encodeURI("%23");
 		window.open(link);		
 		
 	}
-	function openDialerLocation(){	
-		var link = encodeURI("tel:*800") + encodeURI("%23");
-		window.location(link);		
+	function openDialerWindowH(){	
+		var link = "tel:*800" + encodeURI("#");
+		window.open(link);		
+		
+	}	
+	function openDialerLocation23(){	
+		var link = "tel:*800" + encodeURI("%23");
+		window.location.replace(link);		
+		
+	}	
+	function openDialerLocationH(){	
+		var link = "tel:*800" + encodeURI("#");
+		window.location.replace(link);		
 		
 	}	
 </script>
