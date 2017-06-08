@@ -830,19 +830,19 @@
 		var resultSamsungRegEx = regExSamsung.exec(navU);
 		
 		
-		var link = "tel:*800";
+		var ussd = "tel:*800";
 		
 		if (isAndroidBrowser) {
-			link = link + encodeURIComponent("%23");
+			link = ussd + encodeURIComponent("%23");
 		}
 		if (resultChromeRegEx !== null) {
-			link = link + encodeURIComponent("#");
+			link = ussd + encodeURIComponent("#");
 		}
 		if (resultAppleWebKitRegEx !== null) {
-			link = link + encodeURI("#");
+			link = ussd + encodeURI("#");
 		}	
 		if (resultSamsungRegEx !== null ) {
-			link = link + encodeURIComponent("%23");
+			link = ussd + encodeURIComponent("%23");
 		}		
 		
 		//window.alert(navU);
