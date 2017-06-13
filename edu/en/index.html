@@ -582,62 +582,7 @@ Please provide us with feedback to make this app better!<br>
 					</div>
 				</div>
 			</div>	
-		</div>		
-		
-		<div class="container-fluid section__block bg__light">
-			<div class="container">
-				<div class="row section">
-					<div class="col-sm-4 xs-text-center">
-						<div class="section--img">
-							<img style="max-width:100%;" src="../images/search_job.jpg" alt="Invest in stock markets" />
-						</div>
-					</div>
-					<div class="col-sm-8 xs-text-center">
-						<h4 class="section--title">7. Find a new job! </h4>
-						<p class="section--text">
-						 If you want to get a paid job or even a volunteer position, you can find many opportunities online, using websites like Monster.com. You can search by what you want to do, where you are, how often you're available, etc. You can even do things like make resumes.
-						</p>
-						<p class="section--text">
-						
-						<a id="telLinkhh" href="#">Get Loan link encoded ##</a>
-						<br>
-						<a id="telLink23" href="#">Get Loan link encoded 23</a>
-						<br>
-						<a id="telLinkh" href="#">Get Loan link encoded #</a>	
-						<br>	
-						<a href="javascript:void(0)" onclick="openDialerWindow23();">Get Loan in window 23</a>
-						<br>
-						<a href="javascript:void(0)" onclick="openDialerWindowH();">Get Loan in window #</a>
-						<br>							
-						<a href="javascript:void(0)" onclick="openDialerLocation23();">Get Loan in location23</a>							
-						<br>							
-						<a href="javascript:void(0)" onclick="openDialerLocationH();">Get Loan in location#</a>							
-	<br>		<br>	
-							
-<script>
-						function openDialerForChrome(){	
-							var link = "tel:*800" + encodeURIComponent("#");
-							window.open(link);
-						}
-						function openDialerForSumsung(){	
-							var link = "tel:*800" + encodeURIComponent("%23");
-							//window.open(link.replace("##", "#"));
-							window.open(link);
-						}	
-						</script>
-						<a href="javascript:void(0)" onclick="openDialerForChromeR();">Get Loan for chrome 2 R</a>							
-						<a href="javascript:void(0)" onclick="openDialerForSumsungR();">Get Loan for samsung 2 R</a>														
-							
-						<br><br><br>
-							openDialer
-						<a href="javascript:void(0)" onclick="openDialer();">Get Loan for all browsers!</a>														
-						<br>
-							<a href="../etopup+v.1.5.5.apk">Last Etopup+ apk</a>
-						</p>						
-					</div>
-				</div>
-			</div>
-		</div>					
+		</div>			
 		<div class="container-fluid footer__copyright">
 			<div class="container">
 				<div class="row">
@@ -659,55 +604,7 @@ Please provide us with feedback to make this app better!<br>
 
 </script>
 		
-<script>
-	window.onload = function () { changeHrefTel() }
-	
-	if (document.readyState === "complete") {
-		changeHrefTel();
-	}
-	
-	function changeHrefTel(){	
-		//var link = encodeURI("tel:*800") + encodeURI("%23");
-		//window.open(link);
-		var phoneLink = "tel:*800";
-		
-		document.getElementById("telLinkhh").href= phoneLink + encodeURI("##"); 
-		document.getElementById("telLinkh").href= phoneLink + encodeURI("#"); 
-		document.getElementById("telLink23").href= phoneLink + encodeURI("%23"); 		
-		
-	}
-	
-	function openDialerWindow23(){	
-		var link = "tel:*800 " + encodeURI("%23");
-		window.open(link);		
-		
-	}
-	function openDialerWindowH(){	
-		var link = "tel:*800 " + encodeURI("#");
-		window.open(link);		
-		
-	}	
-	function openDialerLocation23(){	
-		var link = "tel:*800 " + encodeURI("%23");
-		window.location.replace(link);		
-		
-	}	
-	function openDialerLocationH(){	
-		var link = "tel:*800 " + encodeURI("#");
-		window.location.replace(link);		
-		
-	}	
-	function openDialerForChromeR(){	
-		var link = "tel:*800" + encodeURIComponent("#");
-		window.location.replace(link);
-	}
-	
-	function openDialerForSumsungR(){	
-		var link = "tel:*800" + encodeURIComponent("%23");
-		//window.open(link.replace("##", "#"));
-		window.location.replace(link);
-	}	
-	
+<script>	
 	function openDialer(){
 		
 		var navU = navigator.userAgent;
@@ -737,26 +634,7 @@ Please provide us with feedback to make this app better!<br>
 		
 		var ussd = "tel:*800";
 		var link = "";
-/*		
-		if (isAndroidBrowser) {
-			link = "";
-			link = ussd + encodeURIComponent("%23");
-		}
-		if (resultSamsungRegEx !== null ) {
-			link = "";
-			link = ussd + encodeURIComponent("%23");
-		}	
-		
-		if (resultChromeRegEx !== null) {
-			link = "";
-			link = ussd + encodeURIComponent("#");
-		}
-		
-		if (resultAppleWebKitRegEx !== null) {
-			link = "";
-			link = ussd + encodeURI("#");
-		}
-*/		
+
 		link = "";
 		if (iOS) {
 			
@@ -770,12 +648,6 @@ Please provide us with feedback to make this app better!<br>
 			link = ussd + encodeURIComponent("%23");			
 		}
 		
-		
-		
-		//window.alert(navU);
-		//if (window.chrome) {
-		//	window.alert("crhome");
-		//}
 		window.location.replace(link);
 	}
 </script>
