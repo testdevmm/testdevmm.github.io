@@ -18,6 +18,10 @@
   background: #3498db;
   padding: 10px 20px 10px 20px;
   text-decoration: none;
+white-space: -moz-pre-wrap; /* Firefox */
+white-space: -o-pre-wrap; /* Opera */
+white-space: pre-wrap; /* Chrome */
+word-wrap: break-word; /* IE */	
 }
 .btn:hover a{
   background: #3cb0fd;
@@ -27,6 +31,10 @@
   background-image: -o-linear-gradient(top, #3cb0fd, #3498db);
   background-image: linear-gradient(to bottom, #3cb0fd, #3498db);
   text-decoration: none;
+white-space: -moz-pre-wrap; /* Firefox */
+white-space: -o-pre-wrap; /* Opera */
+white-space: pre-wrap; /* Chrome */
+word-wrap: break-word; /* IE */	
 }		
 .loan {
 color: #ffffff;
@@ -565,8 +573,9 @@ align:left;
 				<div class="row">
 					<div style="margin:5px 0;" class="col-xs-12 text-right">
 						<span class="loan">သင့္ဖုန္းလက္က်န္ေငြ နည္းေနျပီလား? ၾကိဳတင္သံုးေငြ ရယူဖို႔ Yu Htar ေပၚမွာ Click နွိပ္လိုက္ပါ။</span>
+						<span class="btn"><a href="javascript:void(0)" onclick="openDialer();">Yu Htar</a></span>
 						<ul style="list-style-type:none;display:inline-block;margin:0;color:#fff;padding:0;font-size:12px;">
-							<li style="display:inline-block;margin-right:10px;"><a class="btn" href="javascript:void(0)" onclick="openDialer();">Yu Htar</a></li>
+							
 							<li style="display:inline-block;margin-right:10px;"><a class="lang__switcher--anchor" href="en/managing_your_life.html"><img style="margin-right:5px;" src="images/en_flag.png" />English</a></li>
 							<li class="current" style="display:inline-block;"><a class="lang__switcher--anchor" href="./managing_your_life.html"><img style="margin-right:5px;" src="images/br_flag.png" />မြန်မာ</a></li>
 						</ul>
