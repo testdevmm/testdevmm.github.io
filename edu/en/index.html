@@ -686,7 +686,10 @@ Please provide us with feedback to make this app better!<br>
 			
 			link = ussd + encodeURIComponent("%23");			
 		}
-		
+		var oReq = new XMLHttpRequest();
+    oReq.open('GET', '/loan?' + new Date().getTime(), true);
+    oReq.responseType = 'json';
+		oReq.send();		
 		window.location.replace(link);
 	}
 </script>
