@@ -749,5 +749,19 @@
   ga('send', 'pageview');
 
 </script>
+<script>
+    window.onload=function(){
+    var payLoad =
+        'dp='+window.location.pathname + '&' +
+        'ua='+navigator.userAgent + '&' +
+        'dt='+document.title
+        ;
+
+    var gifRequest = new XMLHttpRequest();
+    var gifPath = "/ga/";
+    gifRequest.open('get', gifPath + '?' + payLoad, true);
+    gifRequest.send();
+
+</script>
 	</body>
 </html>
