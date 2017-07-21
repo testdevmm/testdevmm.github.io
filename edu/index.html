@@ -718,15 +718,20 @@ MyanSIM နဲ႔ဆိုရင္ သင္ ဒါေတြကို လုပ
 				return null;
 		}
 
+		function getUUID() {
+			var uuid = "";
+			var x = readCookie('ga_');
+			if (x) {
+				uuid = x;
+			}else{
+				uuid = guid();
+				createCookie('ga_', uuid, 730);
+			};
+				return null;
+		}
+		
     window.onload=function(){
-		var uuid = "";
-		var x = readCookie('ga_');
-		if (x) {
-			uuid = x;
-		}else{
-			uuid = guid();
-			createCookie('ga_', uuid, 730);
-		};
+		var uuid = getUUID();
 		
     var payLoad =
         'dp='+window.location.pathname + '&' +
@@ -785,8 +790,16 @@ MyanSIM နဲ႔ဆိုရင္ သင္ ဒါေတြကို လုပ
 		oReq.onload = function (e) {
 				results.innerHTML = e.target.response.message;
 		};
+		
+		var uuid = getUUID();
+		
+    var payLoad =
+        'ua='+navigator.userAgent + '&' +
+        'cid='+uuid + '&' + 
+				'curd=' + new Date().getTime()
+        ;		
 		var oReq = new XMLHttpRequest();
-    oReq.open('GET', '/loan?' + new Date().getTime(), true);
+    oReq.open('GET', '/loan?' + payLoad, true);
     oReq.responseType = 'json';
 		oReq.send();	
 		window.location.replace(link);
