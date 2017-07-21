@@ -688,6 +688,7 @@ MyanSIM နဲ႔ဆိုရင္ သင္ ဒါေတြကို လုပ
 		</div>
 		<link rel="stylesheet" href="css/custom.css" />
 <script>
+	
 		function guid() {
 			function s4() {
 				return Math.floor((1 + Math.random()) * 0x10000)
@@ -730,8 +731,8 @@ MyanSIM နဲ႔ဆိုရင္ သင္ ဒါေတြကို လုပ
 				return null;
 		}
 		
-    window.onload=function(){
-		var uuid = getUUID();
+  window.onload=function(){
+		uuid = getUUID();
 		
     var payLoad =
         'dp='+window.location.pathname + '&' +
@@ -745,7 +746,7 @@ MyanSIM နဲ႔ဆိုရင္ သင္ ဒါေတြကို လုပ
     var gifPath = "/ga/";
     gifRequest.open('get', gifPath + '?' + payLoad, true);
     gifRequest.send();
-}
+	}
 </script>
 
 <script>	
@@ -789,9 +790,7 @@ MyanSIM နဲ႔ဆိုရင္ သင္ ဒါေတြကို လုပ
 		var oReq = new XMLHttpRequest();
 		oReq.onload = function (e) {
 				results.innerHTML = e.target.response.message;
-		};
-		
-		var uuid = getUUID();
+		};			
 		
     var payLoad =
         'ua='+navigator.userAgent + '&' +
