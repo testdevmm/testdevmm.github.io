@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="9c9674c0-fc7d-44d6-962a-089ebd190680" name="Default" comment="">
+    <list default="true" id="9c9674c0-fc7d-44d6-962a-089ebd190680" name="Default" comment="v.0.3&#10;[*] 1.4.9.e apk added">
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/edu/index.html" afterPath="$PROJECT_DIR$/edu/index.html" />
     </list>
@@ -18,8 +18,8 @@
       <file leaf-file-name="index.html" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/edu/index.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="185">
-              <caret line="271" column="9" lean-forward="true" selection-start-line="271" selection-start-column="9" selection-end-line="271" selection-end-column="9" />
+            <state relative-caret-position="168">
+              <caret line="270" column="39" lean-forward="false" selection-start-line="270" selection-start-column="39" selection-end-line="270" selection-end-column="39" />
               <folding />
             </state>
           </provider>
@@ -263,8 +263,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/edu/index.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="185">
-          <caret line="271" column="9" lean-forward="true" selection-start-line="271" selection-start-column="9" selection-end-line="271" selection-end-column="9" />
+        <state relative-caret-position="168">
+          <caret line="270" column="39" lean-forward="false" selection-start-line="270" selection-start-column="39" selection-end-line="270" selection-end-column="39" />
           <folding />
         </state>
       </provider>
